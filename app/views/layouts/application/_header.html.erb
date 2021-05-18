@@ -1,19 +1,25 @@
-<header class="app-header navbar">
+<header class="header">
   <% if has_sidebar? %>
-    <button class="navbar-toggler sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-show">
-      <span class="navbar-toggler-icon"></span>
+    <button class="header-toggler d-md-none px-0" type="button" data-sidebar-id="left_sidebar" style="width: 30px;">
+      <span class="header-toggler-icon"></span>
     </button>
   <% end %>
-  <%= link_to root_path, class: "navbar-brand" do %>
-    <%= t("layouts.header.brand") %>
+  <div class="header-brand me-0 text-center" style="width: 14rem;">
+    <%= link_to root_path, class: "text-reset text-decoration-none" do %>
+      <%= t("layouts.header.brand") %>
+    <% end %>
+  </div>
+  <% if has_sidebar? %>
+    <button class="header-toggler d-none d-md-block px-0" type="button" data-sidebar-id="left_sidebar" style="width: 30px;">
+      <span class="header-toggler-icon"></span>
+    </button>
   <% end %>
-  <ul class="nav navbar-nav ml-auto">
+  <ul class="header-nav d-none d-md-flex ms-auto">
     <li class="nav-item dropdown">
-      <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" id="dropdownMenuLink" data-coreui-toggle="dropdown" aria-expanded="false">
         <%= current_user.email %>
-        <i class="fas fa-caret-down"></i>
       </a>
-      <div class="dropdown-menu dropdown-menu-right">
+      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
         <% if current_user.admin? %>
           <%= link_to t("layouts.header.account_menu.admin"), admin_root_path, class: "dropdown-item" %>
         <% end %>
@@ -23,11 +29,8 @@
     </li>
   </ul>
   <% if has_aside? %>
-    <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
-      <span class="navbar-toggler-icon"></span>
+    <button class="header-toggler aside-menu-toggler px-0" type="button" data-aside-id="right_aside" style="width: 30px;">
+      <span class="header-toggler-icon"></span>
     </button>
   <% end %>
 </header>

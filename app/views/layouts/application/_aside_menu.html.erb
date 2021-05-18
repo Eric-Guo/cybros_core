@@ -1,6 +1,4 @@
-<aside class="aside-menu">
-  <button type="button" class="navbar-toggler aside-menu-toggler close" data-toggle="aside-menu-lg-show">
-    <i class="fas fa-times"></i>
-  </button>
+<aside class="aside aside-self-hiding bg-light" id="right_aside" data-controller="coreui-aside">
+  <button type="button" class="btn-close btn-sm" data-action="click->coreui-aside#close"></button>
   <%= yield :aside %>
 </aside>

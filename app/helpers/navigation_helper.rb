@@ -72,6 +72,10 @@ module NavigationHelper
     end
   end
 
+  def nav_active_class(cur, act, options = {})
+    active_nav_item?(options) ? "#{cur} #{act}" : cur
+  end
+
   def nav_link_to(path = {}, name = nil, options = nil, html_options = nil, &block)
     klass = active_nav_item?(path) ? "active" : ""
 

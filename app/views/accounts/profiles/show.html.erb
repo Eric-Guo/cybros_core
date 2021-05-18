@@ -12,13 +12,15 @@
         </div>
         <div class="col-lg-8">
           <%= form_with(model: @user, url: account_profile_path, html: {method: :put}, local: true) do |f| %>
-            <div class="form-group text-left">
-              <%= f.label :email %>
+            <div>
+              <%= f.label :email, class: "form-label" %>
               <%= f.email_field :email, id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
               <%= f.error_message :email, class: "invalid-feedback" %>
             </div>
 
-            <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
+            <div class="mt-3">
+              <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
+            </div>
           <% end %>
         </div>
       </div>

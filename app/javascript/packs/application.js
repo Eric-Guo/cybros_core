@@ -11,10 +11,6 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 import "@stimulus/polyfills";
 
-import JQuery from 'jquery';
-window.$ = window.JQuery = JQuery;
-
-import "bootstrap";
 import "@coreui/coreui"
 
 import "stylesheets/application"
