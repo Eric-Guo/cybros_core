@@ -1,7 +1,8 @@
 <% flash.each do |k, v| %>
-  <div class="alert alert-<%= k %> alert-dismissible fade show">
-    <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
-
-    <%= sanitize v.html_safe %>
+  <div class="alert alert-<%= k %> alert-dismissible fade show" role="alert">
+    <div class="container">
+      <%= sanitize v.html_safe %>
+    </div>
+    <button type="button" class="btn-close" data-coreui-dismiss="alert" aria-label="Close"></button>
   </div>
 <% end %>
