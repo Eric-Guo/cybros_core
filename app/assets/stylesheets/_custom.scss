@@ -13,9 +13,6 @@ a.card-link:hover {
 
 .card .nav.nav-tabs {
   .nav-link {
-    margin-left: -1px;
-    margin-right: -1px;
-
     font-size: 1.25em;
 
     &.active {
@@ -23,8 +20,6 @@ a.card-link:hover {
     }
 
     &:not(.active) {
-      margin-top: -1px;
-      border-top: 2px solid $border-color;
       background: $gray-100;
 
       &:hover {
