@@ -880,10 +880,10 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@coreui/coreui@4.0.0-alpha.5":
-  version "4.0.0-alpha.5"
-  resolved "https://registry.nlark.com/@coreui/coreui/download/@coreui/coreui-4.0.0-alpha.5.tgz#4897c61fd63d14e2e6cb12ef75613370cbbc3734"
-  integrity sha1-SJfGH9Y9FOLmyxLvdWEzcMu8NzQ=
+"@coreui/coreui@4.0.0-beta.0":
+  version "4.0.0-beta.0"
+  resolved "https://registry.nlark.com/@coreui/coreui/download/@coreui/coreui-4.0.0-beta.0.tgz#fb35042f86b39f34ff07f75670fbbf91193bd03a"
+  integrity sha1-+zUEL4aznzT/B/dWcPu/kRk70Do=
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"

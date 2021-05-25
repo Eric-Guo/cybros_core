@@ -880,8 +880,14 @@ $form-switch-checked-bg-image:    url("data:image/svg+xml,<svg xmlns='http://www
 $form-switch-checked-bg-position: right center;
 
 $form-switch-widths: (
-  lg: 2em,
-  xl: 2.5em
+  lg: (
+    width: 1.75em,
+    height: 1.25em
+  ),
+  xl: (
+    width: 2em,
+    height: 1.5em
+  )
 );
 // scss-docs-end form-switch-variables
 
