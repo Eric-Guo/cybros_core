@@ -6,7 +6,7 @@
     "syncyarnlock": "syncyarnlock -s -k && yarn install --check-files"
   },
   "dependencies": {
-    "@coreui/coreui": "4.0.0-beta.0",
+    "@coreui/coreui": "4.0.0-rc.2",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@popperjs/core": "^2.9.2",
     "@rails/actioncable": "^6.1.3-2",
